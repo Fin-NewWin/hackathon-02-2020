@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 121: expected end of line
-    stop music gymnopedia
-               ^
+File "game/script.rpy", line 125: could not parse statement.
+    play music from 20 to 60 endost
+                    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Mar  1 00:26:18 2020
+Sun Mar  1 00:56:30 2020

@@ -1,14 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 124, in script
+  File "game/script.rpy", line 126, in script
     t "the end"
 IOError: Couldn't find file 'pain.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 124, in script
+  File "game/script.rpy", line 126, in script
     t "the end"
   File "/home/fin/renpy-7.3.5-sdk/renpy/ast.py", line 708, in execute
     renpy.exports.say(who, what, *args, **kwargs)
@@ -43,4 +43,4 @@ IOError: Couldn't find file 'pain.mp3'.
 Linux-5.5.6-arch1-1-x86_64-with-glibc2.2.5
 Ren'Py 7.3.5.606
 Save the wildlife 1.0
-Sun Mar  1 00:20:44 2020
+Sun Mar  1 01:02:48 2020
