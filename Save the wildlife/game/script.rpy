@@ -123,7 +123,8 @@ label bad_ending:
     play audio fire fadein 1
     play audio panic fadein 1
     play music endost fadein 5
-    g "The End...."
-    stop audio
-    stop music
+    g "The End..."
+    stop audio fire
+    stop audio panic
+    stop music endost
     return

@@ -41,3 +41,7 @@ ImportError: libGLU.so.1: cannot open shared object file: No such file or direct
 Unknown renderer: gl
 Total time until interface ready: 0.8460688591s
 The window was minimized.
+The window was restored.
+The window was minimized.
+The window was restored.
+The window was minimized.
