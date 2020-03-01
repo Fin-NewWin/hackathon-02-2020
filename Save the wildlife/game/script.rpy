@@ -22,21 +22,21 @@ define feelings = "Feelings.mp3"
 define sadstuff = "SadShit.mp3"
 define gymnopedia = "Gymnopedia.mp3"
 define rain = "rain.mp3"
-
+define panic = "panic.mp3"
+define endost = "audio/pain.mp3"
+define fire = "fire.mp3"
 define h = Character("Yuki")
 
 
 label start:
     scene black
-    play music gymnopedia 
+    play music gymnopedia
     show hi sad:
         zoom 10
 
     h "Sigh, I have to move once again to a new area."
 
     h "Oh well, I heard we are close to the beach. I want to go visit it."
-
-
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -50,7 +50,7 @@ label start:
 
     show hi happy at left:
 
-    # These display lines of dialogue.
+        # These display lines of dialogue.
 
     h "Oh wow it looks amazing!"
 
@@ -58,12 +58,9 @@ label start:
 
     h "Maybe I should try exploring this place at night too!"
 
-
     scene Wall Paper Dark with fade
 
     stop music fadeout 1.0
-
-
 
     play music sadstuff
     show hi happy at left:
@@ -78,11 +75,12 @@ label start:
 
         "Maybe I should leave it.":
             "Not my problem."
+            stop music
             jump bad_ending
 
     show turt at right:
-        xzoom -1
-    #with fade
+        xzoom - 1
+    # with fade
 
     t normal"You dirty humans!"
     h "You can talk?!?"
@@ -106,13 +104,6 @@ label start:
         "No I have to help him":
             "He needs the treatment for sure! I need to do something about it."
 
-
-
-
-
-
-
-
     return
 label alternate_path:
     scene Wall Paper Dark with fade
@@ -127,6 +118,12 @@ label alternate_path:
 
     h "I'll come by tomorrow to ask again. So wait for me."
 
-
-    label bad_ending:
-        t "the end"
+label bad_ending:
+    stop music
+    play audio fire
+    play audio panic
+    play music endost
+    t "the end"
+    stop audio
+    stop music
+    return
