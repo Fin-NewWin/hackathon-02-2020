@@ -5,7 +5,7 @@
 
 # Flip(im, horizontal=True, vertical=False, **properties)
 define t = Character("Turt", image="turt")
-
+define g = Character("God")
 
 image black = im.Scale("Solidblack.png", 1280, 720)
 image hi happy = im.Scale("hi happy.png", 300, 500)
@@ -15,7 +15,7 @@ image Wall Paper Dark = im.Scale("Wall Paper Dark.jpg", 1280, 720)
 image side turt normal = im.Scale("turt.png", 400, 300, yoffset=0, xoffset=5)
 image side hi happy = "hi happy.png"
 image hi sad = im.Scale("hi sad.png", 300, 500)
-
+image fw = im.Scale("WorldFire.png", 1280, 720)
 
 define sky = "SkyBottle.mp3"
 define feelings = "Feelings.mp3"
@@ -118,12 +118,12 @@ label alternate_path:
     h "I'll come by tomorrow to ask again. So wait for me."
 
 label bad_ending:
-
+    scene fw with fade
     stop music
     play audio fire fadein 1
     play audio panic fadein 1
     play music endost fadein 5
-    t "the end"
+    g "The End...."
     stop audio
     stop music
     return

@@ -1,4 +1,4 @@
-Sun Mar  1 01:05:37 2020
+Sun Mar  1 01:21:33 2020
 Linux-5.5.6-arch1-1-x86_64-with-glibc2.2.5
 Ren'Py 7.3.5.606
  
@@ -12,7 +12,7 @@ Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
-Loading analysis data took 0.04s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/home/fin/.renpy/backups/Save the wildlife':
@@ -28,7 +28,7 @@ Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.08s
-Prepare screens took 0.08s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.07s
 Running _start took 0.00s
@@ -39,6 +39,5 @@ Traceback (most recent call last):
     __import__(mod)
 ImportError: libGLU.so.1: cannot open shared object file: No such file or directory
 Unknown renderer: gl
-Total time until interface ready: 0.857152938843s
+Total time until interface ready: 0.8460688591s
 The window was minimized.
-The window was restored.
