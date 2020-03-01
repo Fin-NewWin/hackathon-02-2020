@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-#Flip(im, horizontal=True, vertical=False, **properties)
+# Flip(im, horizontal=True, vertical=False, **properties)
 define t = Character("Turt", image="turt")
 
 
@@ -26,7 +26,6 @@ define panic = "panic.mp3"
 define endost = "audio/pain.mp3"
 define fire = "fire.mp3"
 define h = Character("Yuki")
-
 
 label start:
     scene black
@@ -119,10 +118,11 @@ label alternate_path:
     h "I'll come by tomorrow to ask again. So wait for me."
 
 label bad_ending:
+
     stop music
-    play audio fire
-    play audio panic
-    play music endost
+    play audio fire fadein 1
+    play audio panic fadein 1
+    play music endost fadein 5
     t "the end"
     stop audio
     stop music
